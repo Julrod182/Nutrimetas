@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Goals Register-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nutrimetas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GoalsRegister" customModule="Nutrimetas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,9 +53,12 @@
                                         <rect key="frame" x="0.0" y="231" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dhO-ai-xrf">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="dhO-ai-xrf">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperLecheYYogurtChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SYa-NG-4oT"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-n8-1Up">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -85,9 +88,12 @@
                                         <rect key="frame" x="0.0" y="116" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-4F-YS4">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-4F-YS4">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperVerdurasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mU1-N9-6CR"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDW-bD-dM7">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -117,9 +123,12 @@
                                         <rect key="frame" x="0.0" y="174" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-Vb-mb5">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-Vb-mb5">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperFrutasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XNa-OY-jci"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rI-Oi-Wyx">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -149,9 +158,12 @@
                                         <rect key="frame" x="0.0" y="57" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9Ba-iJ-Zhk">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="9Ba-iJ-Zhk">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="StepperAzucarChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6KP-VC-tK4"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGM-k9-ecx">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -181,9 +193,12 @@
                                         <rect key="frame" x="0.0" y="290" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cLx-MZ-le0">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="cLx-MZ-le0">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperCarnesMagrasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mjg-CW-Pqb"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWH-pQ-mMI">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -213,9 +228,12 @@
                                         <rect key="frame" x="0.0" y="406" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-Es-WiL">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-Es-WiL">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperCarnesAltGrasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1OL-l0-Vqe"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36J-O6-KHA">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -245,9 +263,12 @@
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pZw-Tb-U9G">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="pZw-Tb-U9G">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="StepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="G4I-9e-bta"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-Lc-J4s">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -277,9 +298,12 @@
                                         <rect key="frame" x="0.0" y="465" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DOx-ib-7hG">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="DOx-ib-7hG">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperGrasas:" destination="BYZ-38-t0r" eventType="valueChanged" id="WlH-sG-skc"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWQ-dN-Q3z">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -309,9 +333,12 @@
                                         <rect key="frame" x="0.0" y="349" width="344" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-6G-5h3">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-6G-5h3">
                                                 <rect key="frame" x="250" y="0.0" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="stepperCarnesModGrasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VY1-q1-Zcd"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gec-m7-4jK">
                                                 <rect key="frame" x="219" y="6" width="23" height="21"/>
@@ -354,6 +381,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Limpiar">
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cleanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FgV-2O-bnz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqR-Pq-U7f">
                                         <rect key="frame" x="126" y="0.0" width="93" height="35"/>
@@ -361,6 +391,9 @@
                                         <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Registrar"/>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JyM-iB-2zN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="babyGreen"/>
@@ -384,6 +417,36 @@
                             <constraint firstItem="0ZL-Dp-84t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85.5" id="tVc-31-sKp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goalLabelAzucares" destination="dot-25-dpG" id="6g5-rA-vwE"/>
+                        <outlet property="goalLabelCarnesAltGras" destination="gf4-LE-k6n" id="ocI-VG-eQZ"/>
+                        <outlet property="goalLabelCarnesMagras" destination="qnT-6L-xdP" id="K9t-Bs-LA7"/>
+                        <outlet property="goalLabelCarnesModGras" destination="soV-v6-NLK" id="pJq-6D-bHq"/>
+                        <outlet property="goalLabelFrutas" destination="ec0-TN-CX5" id="F3Z-AR-ezs"/>
+                        <outlet property="goalLabelGrasas" destination="v9D-EF-w3P" id="mqo-rz-nrT"/>
+                        <outlet property="goalLabelLecheYYogurt" destination="8ZA-P7-A5b" id="PgT-re-Dnm"/>
+                        <outlet property="goalLabelVerduras" destination="Ukw-fa-hJe" id="oKf-Xa-ZKD"/>
+                        <outlet property="goalaLabelAlmidon" destination="1GK-Tn-9lp" id="0bj-vW-Gar"/>
+                        <outlet property="stepperAlmidon" destination="pZw-Tb-U9G" id="xAF-aU-A0x"/>
+                        <outlet property="stepperAzucares" destination="9Ba-iJ-Zhk" id="3PZ-OO-5GZ"/>
+                        <outlet property="stepperCarnesAltGras" destination="Mh7-Es-WiL" id="h7Q-Jh-0RO"/>
+                        <outlet property="stepperCarnesMagras" destination="cLx-MZ-le0" id="NeG-9H-eCa"/>
+                        <outlet property="stepperCarnesModGras" destination="gaJ-6G-5h3" id="T0P-aW-8Yb"/>
+                        <outlet property="stepperFrutas" destination="cfM-Vb-mb5" id="7c5-22-Zqx"/>
+                        <outlet property="stepperGrasas" destination="DOx-ib-7hG" id="w4L-qL-f7b"/>
+                        <outlet property="stepperLabelAlmidon" destination="4Nc-Lc-J4s" id="WL3-MS-87W"/>
+                        <outlet property="stepperLabelAzucares" destination="ZGM-k9-ecx" id="E67-7G-Q5t"/>
+                        <outlet property="stepperLabelCarnesAltGras" destination="36J-O6-KHA" id="3Qz-MJ-RCz"/>
+                        <outlet property="stepperLabelCarnesMagras" destination="HWH-pQ-mMI" id="4mc-ct-vOI"/>
+                        <outlet property="stepperLabelCarnesModGras" destination="gec-m7-4jK" id="faU-Mm-ESe"/>
+                        <outlet property="stepperLabelFrutas" destination="5rI-Oi-Wyx" id="PvF-5i-ZZH"/>
+                        <outlet property="stepperLabelGrasas" destination="CWQ-dN-Q3z" id="6i6-xL-04F"/>
+                        <outlet property="stepperLabelLecheYYogurt" destination="9Pb-n8-1Up" id="OK2-oA-aux"/>
+                        <outlet property="stepperLabelVerduras" destination="SDW-bD-dM7" id="KYM-rw-25I"/>
+                        <outlet property="stepperLecheYYogurt" destination="dhO-ai-xrf" id="EdN-pg-32J"/>
+                        <outlet property="stepperVerduras" destination="nYF-4F-YS4" id="G16-nd-SBB"/>
+                        <outletCollection property="stepperGrasas" destination="8bC-Xf-vdC" collectionClass="NSMutableArray" id="ZOk-ok-hXJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

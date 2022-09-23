@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE5EC91428DE171F00DCA1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC91328DE171F00DCA1EB /* AppDelegate.swift */; };
 		CE5EC91628DE171F00DCA1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC91528DE171F00DCA1EB /* SceneDelegate.swift */; };
-		CE5EC91828DE171F00DCA1EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC91728DE171F00DCA1EB /* ViewController.swift */; };
+		CE5EC91828DE171F00DCA1EB /* GoalsRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC91728DE171F00DCA1EB /* GoalsRegister.swift */; };
 		CE5EC91B28DE171F00DCA1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC91928DE171F00DCA1EB /* Main.storyboard */; };
 		CE5EC91E28DE171F00DCA1EB /* Nutrimetas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC91C28DE171F00DCA1EB /* Nutrimetas.xcdatamodeld */; };
 		CE5EC92028DE172000DCA1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC91F28DE172000DCA1EB /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		CE5EC91028DE171F00DCA1EB /* Nutrimetas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutrimetas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5EC91328DE171F00DCA1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5EC91528DE171F00DCA1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE5EC91728DE171F00DCA1EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE5EC91728DE171F00DCA1EB /* GoalsRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRegister.swift; sourceTree = "<group>"; };
 		CE5EC91A28DE171F00DCA1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5EC91D28DE171F00DCA1EB /* Nutrimetas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nutrimetas.xcdatamodel; sourceTree = "<group>"; };
 		CE5EC91F28DE172000DCA1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				CE5EC91328DE171F00DCA1EB /* AppDelegate.swift */,
 				CE5EC91528DE171F00DCA1EB /* SceneDelegate.swift */,
-				CE5EC91728DE171F00DCA1EB /* ViewController.swift */,
+				CE5EC91728DE171F00DCA1EB /* GoalsRegister.swift */,
 				CE5EC91928DE171F00DCA1EB /* Main.storyboard */,
 				CE5EC91F28DE172000DCA1EB /* Assets.xcassets */,
 				CE5EC92128DE172000DCA1EB /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5EC91828DE171F00DCA1EB /* ViewController.swift in Sources */,
+				CE5EC91828DE171F00DCA1EB /* GoalsRegister.swift in Sources */,
 				CE5EC91428DE171F00DCA1EB /* AppDelegate.swift in Sources */,
 				CE5EC91628DE171F00DCA1EB /* SceneDelegate.swift in Sources */,
 				CE5EC91E28DE171F00DCA1EB /* Nutrimetas.xcdatamodeld in Sources */,
