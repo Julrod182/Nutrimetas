@@ -554,7 +554,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3v2-0t-3Fz"/>
+                                            <action selector="stepperGoalAlmidonChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="GGU-mC-69v"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa6-Ps-Dh2">
@@ -585,7 +585,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LXn-ZS-bTK"/>
+                                            <action selector="stepperGoalAzucaresChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="li7-Hl-LfJ"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lR1-yg-dqo">
@@ -616,7 +616,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bYE-7a-2rm"/>
+                                            <action selector="stepperGoalsVerdurasChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="a2A-dG-M8S"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-Cu-aSG">
@@ -647,7 +647,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e50-5E-44V"/>
+                                            <action selector="stepperGoalsFrutasChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="Zi5-xr-koA"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHL-kw-MFr">
@@ -678,7 +678,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zOV-rX-bAg"/>
+                                            <action selector="stepperGoalsLecheYYogurtChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="MCQ-ZG-cZB"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiA-nd-6OZ">
@@ -709,7 +709,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zar-eA-xQi"/>
+                                            <action selector="stepperGoalsCarnesMagrasChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="xXi-p3-vOu"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuQ-GU-gDe">
@@ -740,7 +740,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2GE-Qf-fNJ"/>
+                                            <action selector="stepperGoalsCarnModGrasChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="Gdo-DR-d2i"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCH-E8-oKf">
@@ -771,7 +771,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nFV-kN-2t1"/>
+                                            <action selector="stepperGoalsCarnAltGrasChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="spr-hF-bMg"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T5-Yp-78N">
@@ -802,7 +802,7 @@
                                         <rect key="frame" x="168" y="0.0" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="stepperAlmidonChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ktx-zj-fXV"/>
+                                            <action selector="stepperGoalsGrasasChanged:" destination="yYw-ea-Wy1" eventType="valueChanged" id="2Uv-rH-BvJ"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ft-hb-d2J">
@@ -824,6 +824,9 @@
                                 <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Guardar Meta Diaria"/>
+                                <connections>
+                                    <action selector="setGoalsButtonPressed:" destination="yYw-ea-Wy1" eventType="touchUpInside" id="LNt-pJ-7PA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J4k-2r-szr"/>
@@ -856,6 +859,26 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Metas" image="medal" catalog="system" id="5w4-Yu-g1K"/>
+                    <connections>
+                        <outlet property="almidonController" destination="nIs-cN-hob" id="ZyU-Zc-blh"/>
+                        <outlet property="azucaresController" destination="KiA-zi-1Tq" id="bE9-gl-olj"/>
+                        <outlet property="carnAltGrasController" destination="e1V-7o-49I" id="WUz-8T-2F9"/>
+                        <outlet property="carnModGrasController" destination="ILz-RR-Cpf" id="z8w-Py-GnI"/>
+                        <outlet property="carnesMagrasController" destination="TjS-hs-cwd" id="2kR-V3-Fkh"/>
+                        <outlet property="frutasController" destination="wdK-Eq-QCr" id="SLm-YF-0Ra"/>
+                        <outlet property="grasasController" destination="NdH-kV-7Sd" id="Yl9-ss-KPA"/>
+                        <outlet property="lecheYYogurtController" destination="Hpk-gT-ZZD" id="aWn-nX-ZJq"/>
+                        <outlet property="stepperAlmidonValue" destination="wa6-Ps-Dh2" id="Ccy-0y-0Pw"/>
+                        <outlet property="stepperAzucaresValue" destination="lR1-yg-dqo" id="jc4-Z5-PXn"/>
+                        <outlet property="stepperCarnAltGrasValue" destination="5T5-Yp-78N" id="Nch-Ug-nlz"/>
+                        <outlet property="stepperCarnModGrasValue" destination="KCH-E8-oKf" id="CZD-mi-K0C"/>
+                        <outlet property="stepperCarnesMagrasValue" destination="YuQ-GU-gDe" id="0C4-AU-sYN"/>
+                        <outlet property="stepperFrutasValue" destination="pHL-kw-MFr" id="bQ8-nN-Dou"/>
+                        <outlet property="stepperGrasasValue" destination="3ft-hb-d2J" id="G9m-iP-Kpm"/>
+                        <outlet property="stepperLecheYYogurtValue" destination="aiA-nd-6OZ" id="Lt8-xS-gHa"/>
+                        <outlet property="stepperVerdurasValue" destination="Fma-Cu-aSG" id="NeH-2z-Y1j"/>
+                        <outlet property="verdurasController" destination="SYo-en-4lt" id="RSd-2t-FNJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXd-Dk-pd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
