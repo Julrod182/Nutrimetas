@@ -16,6 +16,7 @@
 		CE5EC92028DE172000DCA1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC91F28DE172000DCA1EB /* Assets.xcassets */; };
 		CE5EC92328DE172000DCA1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC92128DE172000DCA1EB /* LaunchScreen.storyboard */; };
 		CE5EC92B28DE516200DCA1EB /* GoalsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC92A28DE516200DCA1EB /* GoalsBrain.swift */; };
+		CE8DF72328DF65D900DB32DB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF72228DF65D900DB32DB /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CE5EC92228DE172000DCA1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5EC92428DE172000DCA1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5EC92A28DE516200DCA1EB /* GoalsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsBrain.swift; sourceTree = "<group>"; };
+		CE8DF72228DF65D900DB32DB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,43 @@
 		CE5EC91228DE171F00DCA1EB /* Nutrimetas */ = {
 			isa = PBXGroup;
 			children = (
-				CE5EC91328DE171F00DCA1EB /* AppDelegate.swift */,
 				CE5EC91528DE171F00DCA1EB /* SceneDelegate.swift */,
-				CE5EC91728DE171F00DCA1EB /* GoalsRegisterViewController.swift */,
-				CE250C3E28DE6D3A004CDD88 /* GoalsSettingsViewController.swift */,
-				CE5EC91928DE171F00DCA1EB /* Main.storyboard */,
-				CE5EC92A28DE516200DCA1EB /* GoalsBrain.swift */,
+				CE5EC91328DE171F00DCA1EB /* AppDelegate.swift */,
+				CE8DF72628DF661B00DB32DB /* View */,
+				CE8DF72528DF661100DB32DB /* Controller */,
+				CE8DF72428DF660000DB32DB /* Model */,
 				CE5EC91F28DE172000DCA1EB /* Assets.xcassets */,
 				CE5EC92128DE172000DCA1EB /* LaunchScreen.storyboard */,
 				CE5EC92428DE172000DCA1EB /* Info.plist */,
 				CE5EC91C28DE171F00DCA1EB /* Nutrimetas.xcdatamodeld */,
 			);
 			path = Nutrimetas;
+			sourceTree = "<group>";
+		};
+		CE8DF72428DF660000DB32DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EC92A28DE516200DCA1EB /* GoalsBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE8DF72528DF661100DB32DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DF72228DF65D900DB32DB /* TabBarController.swift */,
+				CE5EC91728DE171F00DCA1EB /* GoalsRegisterViewController.swift */,
+				CE250C3E28DE6D3A004CDD88 /* GoalsSettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE8DF72628DF661B00DB32DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EC91928DE171F00DCA1EB /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE250C3F28DE6D3A004CDD88 /* GoalsSettingsViewController.swift in Sources */,
+				CE8DF72328DF65D900DB32DB /* TabBarController.swift in Sources */,
 				CE5EC91828DE171F00DCA1EB /* GoalsRegisterViewController.swift in Sources */,
 				CE5EC91428DE171F00DCA1EB /* AppDelegate.swift in Sources */,
 				CE5EC91628DE171F00DCA1EB /* SceneDelegate.swift in Sources */,

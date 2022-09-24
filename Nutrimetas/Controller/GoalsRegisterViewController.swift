@@ -10,11 +10,10 @@ import UIKit
 class GoalsRegisterViewController: UIViewController {
     
     var goalsBrain = GoalsBrain()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
+    //Clear and Register Button Outlets
+    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
     
     //Goal Labels
     @IBOutlet weak var goalLabelAlmidon: UILabel!
@@ -49,6 +48,31 @@ class GoalsRegisterViewController: UIViewController {
     @IBOutlet weak var stepperLabelCarnesModGras: UILabel!
     @IBOutlet weak var stepperLabelCarnesAltGras: UILabel!
     @IBOutlet weak var stepperLabelGrasas: UILabel!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        clearButton.layer.cornerRadius = 5
+        clearButton.layer.masksToBounds = true
+        registerButton.layer.cornerRadius = 5
+        registerButton.layer.masksToBounds = true
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let tabBar = tabBarController as! TabBarController
+        
+        goalLabelAlmidon.text = String(tabBar.almidonGoal)
+        goalLabelAzucares.text = String(tabBar.azucaresGoal)
+        goalLabelVerduras.text = String(tabBar.verdurasGoal)
+        goalLabelFrutas.text = String(tabBar.frutasGoal)
+        goalLabelLecheYYogurt.text = String(tabBar.lecheYYogurtGoal)
+        goalLabelCarnesMagras.text = String(tabBar.carnesMagrasGoal)
+        goalLabelCarnesModGras.text = String(tabBar.carnModGrasGoal)
+        goalLabelCarnesAltGras.text = String(tabBar.carnAltGrasGoal)
+        goalLabelGrasas.text = String(tabBar.grasasGoal)
+    }
     
     //Stepper Actions
     

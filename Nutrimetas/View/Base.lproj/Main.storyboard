@@ -398,7 +398,7 @@
                                 <rect key="frame" x="85.666666666666686" y="704" width="222" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU0-dX-6DY">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
+                                        <rect key="frame" x="5.6843418860808015e-14" y="0.0" width="81" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
@@ -422,11 +422,13 @@
                                 </subviews>
                                 <color key="backgroundColor" name="babyGreen"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="620-Nt-ZEs"/>
                                     <constraint firstAttribute="height" constant="35" id="MnR-sG-Iu5"/>
+                                    <constraint firstAttribute="width" constant="222" id="nK4-KT-CcQ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-hc-0gI">
-                                <rect key="frame" x="135" y="127" width="218" height="21"/>
+                                <rect key="frame" x="128" y="127" width="218" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meta diaria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-RT-QRd">
                                         <rect key="frame" x="-2" y="-2.8421709430404007e-14" width="91" height="21"/>
@@ -455,20 +457,21 @@
                         <constraints>
                             <constraint firstItem="XR0-jr-Wtr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="54l-er-ccy"/>
                             <constraint firstItem="MUA-7u-ekW" firstAttribute="top" secondItem="bQV-hc-0gI" secondAttribute="bottom" constant="20" id="5wn-gB-6UZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ZL-Dp-84t" secondAttribute="trailing" constant="85.5" id="97M-en-bn3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ZL-Dp-84t" secondAttribute="trailing" constant="85.5" id="97M-en-bn3"/>
                             <constraint firstItem="XR0-jr-Wtr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ELE-rB-idF"/>
-                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ImE-F8-8vf"/>
                             <constraint firstItem="MUA-7u-ekW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PgC-Ba-PfM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ZL-Dp-84t" secondAttribute="bottom" constant="30" id="TqC-Gd-hMv"/>
                             <constraint firstItem="bQV-hc-0gI" firstAttribute="top" secondItem="XR0-jr-Wtr" secondAttribute="bottom" constant="18.329999999999998" id="Y5S-1T-gn4"/>
-                            <constraint firstItem="bQV-hc-0gI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="dCu-Re-93i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQV-hc-0gI" secondAttribute="trailing" constant="40" id="eLv-Da-h9L"/>
+                            <constraint firstItem="bQV-hc-0gI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="172" id="dCu-Re-93i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQV-hc-0gI" secondAttribute="trailing" constant="47" id="eLv-Da-h9L"/>
                             <constraint firstItem="MUA-7u-ekW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ebt-Hk-AWh"/>
-                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85.5" id="tVc-31-sKp"/>
+                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFB-ES-QJz"/>
+                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="85.5" id="tVc-31-sKp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Consumo" image="list.clipboard" catalog="system" id="DKL-LX-fve"/>
                     <connections>
+                        <outlet property="clearButton" destination="VU0-dX-6DY" id="R65-k8-xXa"/>
                         <outlet property="goalLabelAlmidon" destination="1GK-Tn-9lp" id="0bj-vW-Gar"/>
                         <outlet property="goalLabelAzucares" destination="dot-25-dpG" id="6g5-rA-vwE"/>
                         <outlet property="goalLabelCarnesAltGras" destination="gf4-LE-k6n" id="ocI-VG-eQZ"/>
@@ -478,6 +481,7 @@
                         <outlet property="goalLabelGrasas" destination="v9D-EF-w3P" id="mqo-rz-nrT"/>
                         <outlet property="goalLabelLecheYYogurt" destination="8ZA-P7-A5b" id="PgT-re-Dnm"/>
                         <outlet property="goalLabelVerduras" destination="Ukw-fa-hJe" id="oKf-Xa-ZKD"/>
+                        <outlet property="registerButton" destination="pqR-Pq-U7f" id="dWQ-Q5-W7J"/>
                         <outlet property="stepperAlmidon" destination="pZw-Tb-U9G" id="xAF-aU-A0x"/>
                         <outlet property="stepperAzucares" destination="9Ba-iJ-Zhk" id="3PZ-OO-5GZ"/>
                         <outlet property="stepperCarnesAltGras" destination="Mh7-Es-WiL" id="h7Q-Jh-0RO"/>
@@ -500,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006.8702290076335" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1006.046511627907" y="-34.763948497854081"/>
         </scene>
         <!--Metas-->
         <scene sceneID="Jfs-dO-WkR">
@@ -868,6 +872,7 @@
                         <outlet property="frutasController" destination="wdK-Eq-QCr" id="SLm-YF-0Ra"/>
                         <outlet property="grasasController" destination="NdH-kV-7Sd" id="Yl9-ss-KPA"/>
                         <outlet property="lecheYYogurtController" destination="Hpk-gT-ZZD" id="aWn-nX-ZJq"/>
+                        <outlet property="saveGoalsButton" destination="bSh-oB-NIZ" id="PRA-RH-MXS"/>
                         <outlet property="stepperAlmidonValue" destination="wa6-Ps-Dh2" id="Ccy-0y-0Pw"/>
                         <outlet property="stepperAzucaresValue" destination="lR1-yg-dqo" id="jc4-Z5-PXn"/>
                         <outlet property="stepperCarnAltGrasValue" destination="5T5-Yp-78N" id="Nch-Ug-nlz"/>
@@ -887,7 +892,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kGc-u3-Gg1">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WGD-kP-ilx" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WGD-kP-ilx" customClass="TabBarController" customModule="Nutrimetas" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W7E-X0-7Dl">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
