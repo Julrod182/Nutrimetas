@@ -9,6 +9,8 @@ import UIKit
 
 class GoalsRegisterViewController: UIViewController {
     
+    var message = "Bien hecho!!"
+    
     var goalsBrain = GoalsBrain()
     
     //Clear and Register Button Outlets
@@ -283,7 +285,21 @@ class GoalsRegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        print(goalsBrain.flag)
+        
+        if goalsBrain.flag == false {
+            self.message = "Bien Hecho!!"
+        }else{
+            self.message = "Mal Hecho!!"
+        }
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult"{
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.message = self.message
+        }
     }
     
 }
