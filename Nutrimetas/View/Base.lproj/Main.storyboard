@@ -394,8 +394,32 @@
                                     <constraint firstItem="lUc-Ie-cM2" firstAttribute="centerX" secondItem="MUA-7u-ekW" secondAttribute="centerX" id="xNy-Pp-8Yw"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-hc-0gI">
+                                <rect key="frame" x="128" y="127" width="218" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meta diaria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-RT-QRd">
+                                        <rect key="frame" x="-2" y="-2.8421709430404007e-14" width="91" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consumido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-8h-2hr">
+                                        <rect key="frame" x="129" y="-2.8421709430404007e-14" width="93" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="babyGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="aj1-DN-hg4"/>
+                                    <constraint firstAttribute="height" constant="21" id="xW3-Hg-flr"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Dp-84t">
-                                <rect key="frame" x="85.666666666666686" y="704" width="222" height="35"/>
+                                <rect key="frame" x="92" y="704" width="222" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU0-dX-6DY">
                                         <rect key="frame" x="5.6843418860808015e-14" y="0.0" width="81" height="35"/>
@@ -427,37 +451,13 @@
                                     <constraint firstAttribute="width" constant="222" id="nK4-KT-CcQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-hc-0gI">
-                                <rect key="frame" x="128" y="127" width="218" height="21"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meta diaria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-RT-QRd">
-                                        <rect key="frame" x="-2" y="-2.8421709430404007e-14" width="91" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consumido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-8h-2hr">
-                                        <rect key="frame" x="129" y="-2.8421709430404007e-14" width="93" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="babyGreen"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="218" id="aj1-DN-hg4"/>
-                                    <constraint firstAttribute="height" constant="21" id="xW3-Hg-flr"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="babyGreen"/>
                         <constraints>
                             <constraint firstItem="XR0-jr-Wtr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="54l-er-ccy"/>
                             <constraint firstItem="MUA-7u-ekW" firstAttribute="top" secondItem="bQV-hc-0gI" secondAttribute="bottom" constant="20" id="5wn-gB-6UZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ZL-Dp-84t" secondAttribute="trailing" constant="85.5" id="97M-en-bn3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ZL-Dp-84t" secondAttribute="trailing" constant="79" id="97M-en-bn3"/>
                             <constraint firstItem="XR0-jr-Wtr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ELE-rB-idF"/>
                             <constraint firstItem="MUA-7u-ekW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PgC-Ba-PfM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ZL-Dp-84t" secondAttribute="bottom" constant="30" id="TqC-Gd-hMv"/>
@@ -465,8 +465,8 @@
                             <constraint firstItem="bQV-hc-0gI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="172" id="dCu-Re-93i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQV-hc-0gI" secondAttribute="trailing" constant="47" id="eLv-Da-h9L"/>
                             <constraint firstItem="MUA-7u-ekW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ebt-Hk-AWh"/>
-                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFB-ES-QJz"/>
-                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="85.5" id="tVc-31-sKp"/>
+                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="6.5" id="hFB-ES-QJz"/>
+                            <constraint firstItem="0ZL-Dp-84t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="92" id="tVc-31-sKp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Consumo" image="list.clipboard" catalog="system" id="DKL-LX-fve"/>
