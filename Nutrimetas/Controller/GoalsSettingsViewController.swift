@@ -85,6 +85,7 @@ class GoalsSettingsViewController: UIViewController {
         tabBar.carnesMagrasGoal = Int(carnesMagrasController.value)
         tabBar.carnModGrasGoal = Int(carnModGrasController.value)
         tabBar.carnAltGrasGoal = Int(carnAltGrasController.value)
+        tabBar.grasasGoal = Int(grasasController.value)
         
         
     }
