@@ -43,6 +43,8 @@ class GoalsSettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tabBar = tabBarController as! TabBarController
         print(dataFilePath!)
 
         saveGoalsButton.layer.cornerRadius = 5
@@ -59,6 +61,16 @@ class GoalsSettingsViewController: UIViewController {
         stepperCarnModGrasValue.text = self.someonesGoal.carModGras
         stepperCarnAltGrasValue.text = self.someonesGoal.carAltGras
         stepperGrasasValue.text = self.someonesGoal.grasas
+        
+        tabBar.almidonGoal = Int(self.someonesGoal.almidones)!
+        tabBar.azucaresGoal = Int(self.someonesGoal.azucares)!
+        tabBar.verdurasGoal = Int(self.someonesGoal.verduras)!
+        tabBar.frutasGoal = Int(self.someonesGoal.frutas)!
+        tabBar.lecheYYogurtGoal = Int(self.someonesGoal.lecheYYogurt)!
+        tabBar.carnesMagrasGoal = Int(self.someonesGoal.carnesMagras)!
+        tabBar.carnModGrasGoal = Int(self.someonesGoal.carModGras)!
+        tabBar.carnAltGrasGoal = Int(self.someonesGoal.carAltGras)!
+        tabBar.grasasGoal = Int(self.someonesGoal.grasas)!
     }
     
     //Stepper actions
