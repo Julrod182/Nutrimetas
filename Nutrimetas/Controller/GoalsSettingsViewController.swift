@@ -8,6 +8,11 @@
 import UIKit
 
 class GoalsSettingsViewController: UIViewController {
+    
+    var someonesGoal = SomeonesGoal()
+    
+    //NSCoder file path set up
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathExtension("Items.plist")
 
     //Save button
     @IBOutlet weak var saveGoalsButton: UIButton!
@@ -38,56 +43,108 @@ class GoalsSettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(dataFilePath!)
 
         saveGoalsButton.layer.cornerRadius = 5
         saveGoalsButton.layer.masksToBounds = true
+        
+        loadItems()
+        
+        stepperAlmidonValue.text = self.someonesGoal.almidones
+        stepperAzucaresValue.text = self.someonesGoal.azucares
+        stepperVerdurasValue.text = self.someonesGoal.verduras
+        stepperFrutasValue.text = self.someonesGoal.frutas
+        stepperLecheYYogurtValue.text = self.someonesGoal.lecheYYogurt
+        stepperCarnesMagrasValue.text = self.someonesGoal.carnesMagras
+        stepperCarnModGrasValue.text = self.someonesGoal.carModGras
+        stepperCarnAltGrasValue.text = self.someonesGoal.carAltGras
+        stepperGrasasValue.text = self.someonesGoal.grasas
     }
     
     //Stepper actions
     @IBAction func stepperGoalAlmidonChanged(_ sender: UIStepper) {
-        stepperAlmidonValue.text = String(Int(sender.value))
+        stepperAlmidonValue.text = String(Int(sender.value) + Int(self.someonesGoal.almidones)!)
     }
     @IBAction func stepperGoalAzucaresChanged(_ sender: UIStepper) {
-        stepperAzucaresValue.text = String(Int(sender.value))
+        stepperAzucaresValue.text = String(Int(sender.value) + Int(self.someonesGoal.azucares)!)
     }
     @IBAction func stepperGoalsVerdurasChanged(_ sender: UIStepper) {
-        stepperVerdurasValue.text = String(Int(sender.value))
+        stepperVerdurasValue.text = String(Int(sender.value) + Int(self.someonesGoal.verduras)!)
     }
     @IBAction func stepperGoalsFrutasChanged(_ sender: UIStepper) {
-        stepperFrutasValue.text = String(Int(sender.value))
+        stepperFrutasValue.text = String(Int(sender.value) + Int(self.someonesGoal.frutas)!)
     }
     @IBAction func stepperGoalsLecheYYogurtChanged(_ sender: UIStepper) {
-        stepperLecheYYogurtValue.text = String(Int(sender.value))
+        stepperLecheYYogurtValue.text = String(Int(sender.value) + Int(self.someonesGoal.lecheYYogurt)!)
     }
     @IBAction func stepperGoalsCarnesMagrasChanged(_ sender: UIStepper) {
-        stepperCarnesMagrasValue.text = String(Int(sender.value))
+        stepperCarnesMagrasValue.text = String(Int(sender.value) + Int(self.someonesGoal.carnesMagras)!)
     }
     @IBAction func stepperGoalsCarnModGrasChanged(_ sender: UIStepper) {
-        stepperCarnModGrasValue.text = String(Int(sender.value))
+        stepperCarnModGrasValue.text = String(Int(sender.value) + Int(self.someonesGoal.carModGras)!)
     }
     @IBAction func stepperGoalsCarnAltGrasChanged(_ sender: UIStepper) {
-        stepperCarnAltGrasValue.text = String(Int(sender.value))
+        stepperCarnAltGrasValue.text = String(Int(sender.value) + Int(self.someonesGoal.carAltGras)!)
     }
     @IBAction func stepperGoalsGrasasChanged(_ sender: UIStepper) {
-        stepperGrasasValue.text = String(Int(sender.value))
+        stepperGrasasValue.text = String(Int(sender.value) + Int(self.someonesGoal.grasas)!)
     }
+
+    
     
     //Set goals action
     @IBAction func setGoalsButtonPressed(_ sender: UIButton) {
         
         let tabBar = tabBarController as! TabBarController
         
-        tabBar.almidonGoal = Int(almidonController.value)
-        tabBar.azucaresGoal = Int(azucaresController.value)
-        tabBar.verdurasGoal = Int(verdurasController.value)
-        tabBar.frutasGoal = Int(frutasController.value)
-        tabBar.lecheYYogurtGoal = Int(lecheYYogurtController.value)
-        tabBar.carnesMagrasGoal = Int(carnesMagrasController.value)
-        tabBar.carnModGrasGoal = Int(carnModGrasController.value)
-        tabBar.carnAltGrasGoal = Int(carnAltGrasController.value)
-        tabBar.grasasGoal = Int(grasasController.value)
+        self.someonesGoal.almidones = stepperAlmidonValue.text!
+        self.someonesGoal.azucares = stepperAzucaresValue.text!
+        self.someonesGoal.verduras = stepperVerdurasValue.text!
+        self.someonesGoal.frutas = stepperFrutasValue.text!
+        self.someonesGoal.lecheYYogurt = stepperLecheYYogurtValue.text!
+        self.someonesGoal.carnesMagras = stepperCarnesMagrasValue.text!
+        self.someonesGoal.carModGras = stepperCarnModGrasValue.text!
+        self.someonesGoal.carAltGras = stepperCarnAltGrasValue.text!
+        self.someonesGoal.grasas = stepperGrasasValue.text!
         
+        saveItems()
+        
+        tabBar.almidonGoal = Int(self.someonesGoal.almidones)!
+        tabBar.azucaresGoal = Int(self.someonesGoal.azucares)!
+        tabBar.verdurasGoal = Int(self.someonesGoal.verduras)!
+        tabBar.frutasGoal = Int(self.someonesGoal.frutas)!
+        tabBar.lecheYYogurtGoal = Int(self.someonesGoal.lecheYYogurt)!
+        tabBar.carnesMagrasGoal = Int(self.someonesGoal.carnesMagras)!
+        tabBar.carnModGrasGoal = Int(self.someonesGoal.carModGras)!
+        tabBar.carnAltGrasGoal = Int(self.someonesGoal.carAltGras)!
+        tabBar.grasasGoal = Int(self.someonesGoal.grasas)!
         
     }
     
+    //MARK: - Model MAnipulation methods
+    
+    func saveItems() {
+        
+        let encoder  = PropertyListEncoder()
+        
+        do{
+            let data = try encoder.encode(someonesGoal)
+            try data.write(to: dataFilePath!)
+        }catch{
+            print("Error catching someonesGoal \(error)")
+        }
+    }
+    
+    
+    func loadItems() {
+        
+        if let data = try? Data(contentsOf: dataFilePath!){
+            let decoder = PropertyListDecoder()
+            do{
+                someonesGoal = try decoder.decode(SomeonesGoal.self, from: data)
+            }catch{
+                print("Error decoding someonesGoal \(error)")
+            }
+        }
+    }
 }
