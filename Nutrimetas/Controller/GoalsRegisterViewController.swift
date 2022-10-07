@@ -307,30 +307,39 @@ class GoalsRegisterViewController: UIViewController {
         
         stepperAlmidon.value = 0
         stepperLabelAlmidon.text = "0"
+        stepperLabelAlmidon.textColor = .blue
         
         stepperAzucares.value = 0
         stepperLabelAzucares.text = "0"
+        stepperLabelAzucares.textColor = .blue
         
         stepperVerduras.value = 0
         stepperLabelVerduras.text = "0"
+        stepperLabelVerduras.textColor = .blue
         
         stepperFrutas.value = 0
         stepperLabelFrutas.text = "0"
+        stepperLabelFrutas.textColor = .blue
         
         stepperLecheYYogurt.value = 0
         stepperLabelLecheYYogurt.text = "0"
+        stepperLabelLecheYYogurt.textColor = .blue
         
         stepperCarnesMagras.value = 0
         stepperLabelCarnesMagras.text = "0"
+        stepperLabelCarnesMagras.textColor = .blue
         
         stepperCarnesModGras.value = 0
         stepperLabelCarnesModGras.text = "0"
+        stepperLabelCarnesModGras.textColor = .blue
         
         stepperCarnesAltGras.value = 0
         stepperLabelCarnesAltGras.text = "0"
+        stepperLabelCarnesAltGras.textColor = .blue
         
         stepperGrasas.value = 0
         stepperLabelGrasas.text = "0"
+        stepperLabelGrasas.textColor = .blue
         
         consumptionArray = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")

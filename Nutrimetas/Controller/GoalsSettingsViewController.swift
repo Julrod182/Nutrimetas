@@ -12,7 +12,7 @@ class GoalsSettingsViewController: UIViewController {
     var someonesGoal = SomeonesGoal()
     
     //NSCoder file path set up
-    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathExtension("Items.plist")
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
 
     //Save button
     @IBOutlet weak var saveGoalsButton: UIButton!
