@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WGD-kP-ilx">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GoalsRegisterViewController" customModule="Nutrimetas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro de Consumo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-jr-Wtr">
-                                <rect key="frame" x="75" y="74" width="280" height="74.666666666666686"/>
+                                <rect key="frame" x="56.666666666666657" y="74" width="280" height="34.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="greenText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUA-7u-ekW">
-                                <rect key="frame" x="43" y="208" width="344" height="516"/>
+                                <rect key="frame" x="24.666666666666657" y="168" width="344" height="516"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoF-TY-DqH">
                                         <rect key="frame" x="0.0" y="237" width="344" height="32"/>
@@ -47,14 +47,14 @@
                                                 <rect key="frame" x="-1" y="6" width="114" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZA-P7-A5b">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -85,14 +85,14 @@
                                                 <rect key="frame" x="22" y="6" width="69" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukw-fa-hJe">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -123,14 +123,14 @@
                                                 <rect key="frame" x="32" y="6" width="48" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-TN-CX5">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -161,14 +161,14 @@
                                                 <rect key="frame" x="21" y="6" width="71" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dot-25-dpG">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -200,14 +200,14 @@
                                                 <rect key="frame" x="-2" y="6" width="116" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnT-6L-xdP">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -238,14 +238,14 @@
                                                 <rect key="frame" x="-1" y="6" width="116" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf4-LE-k6n">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -276,14 +276,14 @@
                                                 <rect key="frame" x="16" y="6" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GK-Tn-9lp">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -314,14 +314,14 @@
                                                 <rect key="frame" x="29" y="6" width="54" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9D-EF-w3P">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -352,14 +352,14 @@
                                                 <rect key="frame" x="-8" y="6" width="129" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soV-v6-NLK">
                                                 <rect key="frame" x="142" y="6" width="23" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="greenText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -395,20 +395,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-hc-0gI">
-                                <rect key="frame" x="165" y="167" width="218" height="21"/>
+                                <rect key="frame" x="128" y="127" width="218" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meta diaria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-RT-QRd">
                                         <rect key="frame" x="-2" y="-2.8421709430404007e-14" width="91" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consumido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-8h-2hr">
                                         <rect key="frame" x="129" y="-2.8421709430404007e-14" width="93" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -419,12 +419,12 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Dp-84t">
-                                <rect key="frame" x="110.66666666666669" y="784" width="222" height="35"/>
+                                <rect key="frame" x="92" y="704" width="222" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU0-dX-6DY">
                                         <rect key="frame" x="5.6843418860808015e-14" y="0.0" width="81" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="buttonGreen"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Limpiar">
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
@@ -436,7 +436,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqR-Pq-U7f">
                                         <rect key="frame" x="126" y="0.0" width="93" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="buttonGreen"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Registrar"/>
                                         <connections>
@@ -512,19 +512,19 @@
             <objects>
                 <viewController id="YW4-cR-MNk" customClass="ResultsViewController" customModule="Nutrimetas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uwV-Kz-Q4j">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bien hecho!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49a-wb-kGo">
-                                <rect key="frame" x="95.666666666666686" y="404.66666666666669" width="239" height="54"/>
+                                <rect key="frame" x="77" y="364.66666666666669" width="239" height="54"/>
                                 <color key="backgroundColor" name="babyGreen"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="greenText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbk-6r-rat">
-                                <rect key="frame" x="168.66666666666666" y="568" width="92.999999999999972" height="35"/>
-                                <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="150" y="488" width="93" height="35"/>
+                                <color key="backgroundColor" name="buttonGreen"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Regresar"/>
                                 <connections>
@@ -555,33 +555,33 @@
             <objects>
                 <viewController id="yYw-ea-Wy1" customClass="GoalsSettingsViewController" customModule="Nutrimetas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QHW-eW-929">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro de Metas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHc-z6-lge">
-                                <rect key="frame" x="97" y="74" width="236" height="74.666666666666686"/>
+                                <rect key="frame" x="78.666666666666686" y="74" width="236" height="74.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74.670000000000002" id="ssP-l8-svc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="greenText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wT7-aQ-1x1">
-                                <rect key="frame" x="89" y="149" width="252" height="21"/>
+                                <rect key="frame" x="70.666666666666686" y="149" width="252" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meta diaria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHS-ZG-Kik">
                                         <rect key="frame" x="161" y="0.0" width="91" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alimento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z9-zA-RpL">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.1051692739" green="0.263849318" blue="0.28409177060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -592,13 +592,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uI-bR-vmh">
-                                <rect key="frame" x="84" y="188.33333333333334" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="188.33333333333334" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Almidones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFg-Zt-YWc">
                                         <rect key="frame" x="0.0" y="5" width="80" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="nIs-cN-hob">
@@ -612,7 +612,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -623,13 +623,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzH-7M-RbO">
-                                <rect key="frame" x="84" y="245.33333333333337" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="245.33333333333337" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Azúcares" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-fQ-4lv">
                                         <rect key="frame" x="5.0000000000000568" y="4.9999999999999716" width="71" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="KiA-zi-1Tq">
@@ -643,7 +643,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -654,13 +654,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otx-DD-ATt">
-                                <rect key="frame" x="84" y="302.33333333333331" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="302.33333333333331" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Verduras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-41-LBz">
                                         <rect key="frame" x="6.0000000000000568" y="5.0000000000000568" width="69" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-en-4lt">
@@ -674,7 +674,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -685,13 +685,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqF-I8-9kk">
-                                <rect key="frame" x="84" y="359.33333333333331" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="359.33333333333331" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frutas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJX-dG-Nw6">
                                         <rect key="frame" x="16.000000000000057" y="5.0000000000000568" width="48" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-Eq-QCr">
@@ -705,7 +705,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -716,13 +716,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7n7-GW-SdY">
-                                <rect key="frame" x="84" y="416.33333333333331" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="416.33333333333331" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leche y Yogurt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRx-4Q-IYn">
                                         <rect key="frame" x="-16.999999999999943" y="5.0000000000000568" width="114" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="Hpk-gT-ZZD">
@@ -736,7 +736,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -747,13 +747,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSG-nz-qIJ">
-                                <rect key="frame" x="84" y="473.33333333333331" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="473.33333333333331" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carnes Magras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2n-35-ptd">
                                         <rect key="frame" x="-17.999999999999943" y="5.0000000000000568" width="116" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-hs-cwd">
@@ -767,7 +767,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -778,13 +778,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAu-ye-6R0">
-                                <rect key="frame" x="84" y="530.33333333333337" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="530.33333333333337" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carn. Mod. Gras." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-ub-Ra7">
                                         <rect key="frame" x="-23.999999999999943" y="5" width="129" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="ILz-RR-Cpf">
@@ -798,7 +798,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -809,13 +809,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yo7-06-JQ3">
-                                <rect key="frame" x="84" y="587.33333333333337" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="587.33333333333337" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carn. Alt. Gras." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp4-Pf-puS">
                                         <rect key="frame" x="-17.999999999999943" y="4.9999999999998863" width="116" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="e1V-7o-49I">
@@ -829,7 +829,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -840,13 +840,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="808-Gj-n8c">
-                                <rect key="frame" x="84" y="644.33333333333337" width="262" height="32"/>
+                                <rect key="frame" x="65.666666666666686" y="644.33333333333337" width="262" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grasas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMY-l5-9G5">
                                         <rect key="frame" x="13.000000000000057" y="4.9999999999998863" width="54" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-kV-7Sd">
@@ -860,7 +860,7 @@
                                         <rect key="frame" x="130" y="5" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="greenText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -871,8 +871,8 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSh-oB-NIZ">
-                                <rect key="frame" x="127" y="801" width="176" height="35"/>
-                                <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="108.66666666666669" y="721" width="176" height="35"/>
+                                <color key="backgroundColor" name="buttonGreen"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Guardar Meta Diaria"/>
                                 <connections>
@@ -961,6 +961,12 @@
         <image name="medal" catalog="system" width="121" height="128"/>
         <namedColor name="babyGreen">
             <color red="0.81176470588235294" green="0.97647058823529409" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonGreen">
+            <color red="0.70196078431372544" green="0.77254901960784317" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="greenText">
+            <color red="0.14901960784313725" green="0.25882352941176473" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
