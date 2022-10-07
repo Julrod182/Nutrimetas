@@ -15,6 +15,8 @@ class GoalsRegisterViewController: UIViewController {
     
     var consumptionArray = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
     
+    var comparissonFlag = [false]
+    
     let defaults = UserDefaults.standard
     
     //Clear and Register Button Outlets
@@ -65,6 +67,11 @@ class GoalsRegisterViewController: UIViewController {
         if let consumption = defaults.array(forKey: "ConsumptionArray") as? [String] {
             self.consumptionArray = consumption
         }
+        
+        if let flag = defaults.array(forKey: "ConsumptionFlag") as? [Bool] {
+            self.comparissonFlag = flag
+        }
+        
         stepperLabelAlmidon.text = consumptionArray[0]
         stepperAlmidon.value = Double(consumptionArray[0])!
         
@@ -99,14 +106,49 @@ class GoalsRegisterViewController: UIViewController {
         let tabBar = tabBarController as! TabBarController
         
         goalLabelAlmidon.text = String(tabBar.almidonGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelAlmidon.text!)! , consumo: Int(stepperAlmidon.value))
+        colorChange(nutriente: stepperLabelAlmidon, flag: goalsBrain.flag)
+        
         goalLabelAzucares.text = String(tabBar.azucaresGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelAzucares.text!)! , consumo: Int(stepperAzucares.value))
+        colorChange(nutriente: stepperLabelAzucares, flag: goalsBrain.flag)
+        
         goalLabelVerduras.text = String(tabBar.verdurasGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelVerduras.text!)! , consumo: Int(stepperVerduras.value))
+        colorChange(nutriente: stepperLabelVerduras, flag: goalsBrain.flag)
+        
         goalLabelFrutas.text = String(tabBar.frutasGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelFrutas.text!)! , consumo: Int(stepperFrutas.value))
+        colorChange(nutriente: stepperLabelFrutas, flag: goalsBrain.flag)
+        
         goalLabelLecheYYogurt.text = String(tabBar.lecheYYogurtGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelLecheYYogurt.text!)! , consumo: Int(stepperLecheYYogurt.value))
+        colorChange(nutriente: stepperLabelLecheYYogurt, flag: goalsBrain.flag)
+        
         goalLabelCarnesMagras.text = String(tabBar.carnesMagrasGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelCarnesMagras.text!)! , consumo: Int(stepperCarnesMagras.value))
+        colorChange(nutriente: stepperLabelCarnesMagras, flag: goalsBrain.flag)
+        
         goalLabelCarnesModGras.text = String(tabBar.carnModGrasGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelCarnesModGras.text!)! , consumo: Int(stepperCarnesModGras.value))
+        colorChange(nutriente: stepperLabelCarnesModGras, flag: goalsBrain.flag)
+        
         goalLabelCarnesAltGras.text = String(tabBar.carnAltGrasGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelCarnesAltGras.text!)! , consumo: Int(stepperCarnesAltGras.value))
+        colorChange(nutriente: stepperLabelCarnesAltGras, flag: goalsBrain.flag)
+        
         goalLabelGrasas.text = String(tabBar.grasasGoal)
+        //Ejecuta comparación
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelGrasas.text!)! , consumo: Int(stepperGrasas.value))
+        colorChange(nutriente: stepperLabelGrasas, flag: goalsBrain.flag)
     }
     
     //Stepper Actions
@@ -114,24 +156,17 @@ class GoalsRegisterViewController: UIViewController {
     @IBAction func stepperAlmidonChanged(_ sender: UIStepper) {
         stepperLabelAlmidon.text = String(Int(stepperAlmidon.value))
         self.consumptionArray[0] = String(Int(stepperAlmidon.value))
-        print(self.consumptionArray)
         
-        //Save in userdefaults
+        //Save consumptionArray in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
-        
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelAlmidon.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
+
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelAlmidon.textColor = .red
-        }else{
-            stepperLabelAlmidon.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelAlmidon.text!)! , consumo: Int(stepperAlmidon.value))
+        colorChange(nutriente: stepperLabelAlmidon, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
         
     }
     
@@ -142,19 +177,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelAzucares.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelAzucares.textColor = .red
-        }else{
-            stepperLabelAzucares.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelAzucares.text!)! , consumo: Int(stepperAzucares.value))
+        colorChange(nutriente: stepperLabelAzucares, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
         
     }
     
@@ -165,19 +194,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelVerduras.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelVerduras.textColor = .red
-        }else{
-            stepperLabelVerduras.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelVerduras.text!)! , consumo: Int(stepperVerduras.value))
+        colorChange(nutriente: stepperLabelVerduras, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
         
     }
     
@@ -188,19 +211,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelFrutas.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelFrutas.textColor = .red
-        }else{
-            stepperLabelFrutas.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelFrutas.text!)! , consumo: Int(stepperFrutas.value))
+        colorChange(nutriente: stepperLabelFrutas, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
     }
     
     @IBAction func stepperLecheYYogurtChanged(_ sender: UIStepper) {
@@ -210,19 +227,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelLecheYYogurt.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelLecheYYogurt.textColor = .red
-        }else{
-            stepperLabelLecheYYogurt.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelLecheYYogurt.text!)! , consumo: Int(stepperLecheYYogurt.value))
+        colorChange(nutriente: stepperLabelLecheYYogurt, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
     }
     
     @IBAction func stepperCarnesMagrasChanged(_ sender: UIStepper) {
@@ -232,19 +243,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelCarnesMagras.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelCarnesMagras.textColor = .red
-        }else{
-            stepperLabelCarnesMagras.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelCarnesMagras.text!)! , consumo: Int(stepperCarnesMagras.value))
+        colorChange(nutriente: stepperLabelCarnesMagras, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
     }
     
     @IBAction func stepperCarnesModGrasChanged(_ sender: UIStepper) {
@@ -254,19 +259,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelCarnesModGras.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelCarnesModGras.textColor = .red
-        }else{
-            stepperLabelCarnesModGras.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelCarnesModGras.text!)! , consumo: Int(stepperCarnesModGras.value))
+        colorChange(nutriente: stepperLabelCarnesModGras, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
     }
     
     @IBAction func stepperCarnesAltGrasChanged(_ sender: UIStepper) {
@@ -276,19 +275,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelCarnesAltGras.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelCarnesAltGras.textColor = .red
-        }else{
-            stepperLabelCarnesAltGras.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelCarnesAltGras.text!)! , consumo: Int(stepperCarnesAltGras.value))
+        colorChange(nutriente: stepperLabelCarnesAltGras, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
     }
     
     @IBAction func stepperGrasasChanged(_ sender: UIStepper) {
@@ -298,19 +291,13 @@ class GoalsRegisterViewController: UIViewController {
         //Save in userdefaults
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
         
-        //Asignación de variables
-        goalsBrain.macroNutrienteConsumido = Int(sender.value)
-        let consumo = goalsBrain.macroNutrienteConsumido
-        goalsBrain.macroNutrienteMeta = Int(goalLabelGrasas.text!)!
-        let meta = goalsBrain.macroNutrienteMeta
-        
         //Ejecuta comparación
-        goalsBrain.compararMetaYConsumo(meta: meta , consumo: consumo)
-        if goalsBrain.flag == true {
-            stepperLabelGrasas.textColor = .red
-        }else{
-            stepperLabelGrasas.textColor = .blue
-        }
+        goalsBrain.compararMetaYConsumo(meta: Int(goalLabelGrasas.text!)! , consumo: Int(stepperGrasas.value))
+        colorChange(nutriente: stepperLabelGrasas, flag: goalsBrain.flag)
+        self.comparissonFlag[0] = goalsBrain.flag
+        
+        //Save comparissonFlag in userdefaults
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
     }
     
     
@@ -320,48 +307,42 @@ class GoalsRegisterViewController: UIViewController {
         
         stepperAlmidon.value = 0
         stepperLabelAlmidon.text = "0"
-        stepperLabelAlmidon.textColor = .black
         
         stepperAzucares.value = 0
         stepperLabelAzucares.text = "0"
-        stepperLabelAzucares.textColor = .black
         
         stepperVerduras.value = 0
         stepperLabelVerduras.text = "0"
-        stepperLabelVerduras.textColor = .black
         
         stepperFrutas.value = 0
         stepperLabelFrutas.text = "0"
-        stepperLabelFrutas.textColor = .black
         
         stepperLecheYYogurt.value = 0
         stepperLabelLecheYYogurt.text = "0"
-        stepperLabelLecheYYogurt.textColor = .black
         
         stepperCarnesMagras.value = 0
         stepperLabelCarnesMagras.text = "0"
-        stepperLabelCarnesMagras.textColor = .black
         
         stepperCarnesModGras.value = 0
         stepperLabelCarnesModGras.text = "0"
-        stepperLabelCarnesModGras.textColor = .black
         
         stepperCarnesAltGras.value = 0
         stepperLabelCarnesAltGras.text = "0"
-        stepperLabelCarnesAltGras.textColor = .black
         
         stepperGrasas.value = 0
         stepperLabelGrasas.text = "0"
-        stepperLabelGrasas.textColor = .black
         
         consumptionArray = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
         self.defaults.set(self.consumptionArray, forKey: "ConsumptionArray")
+        
+        comparissonFlag = [false]
+        self.defaults.set(self.comparissonFlag, forKey: "ConsumptionFlag")
         
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         
-        if goalsBrain.flag == false {
+        if self.comparissonFlag[0] == false {
             self.message = "Bien Hecho!!"
         }else{
             self.message = "Mal Hecho!!"
@@ -374,6 +355,14 @@ class GoalsRegisterViewController: UIViewController {
         if segue.identifier == "goToResult"{
             let destinationVC = segue.destination as! ResultsViewController
             destinationVC.message = self.message
+        }
+    }
+    
+    func colorChange(nutriente: UILabel, flag: Bool){
+        if flag == true {
+            nutriente.textColor = .red
+        }else{
+            nutriente.textColor = .blue
         }
     }
     

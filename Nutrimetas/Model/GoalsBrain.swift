@@ -9,8 +9,6 @@ import Foundation
 
 struct GoalsBrain {
     
-    var macroNutrienteMeta: Int = 0
-    var macroNutrienteConsumido: Int = 0
     var flag: Bool = false
     
     mutating func compararMetaYConsumo(meta: Int, consumo: Int) {
