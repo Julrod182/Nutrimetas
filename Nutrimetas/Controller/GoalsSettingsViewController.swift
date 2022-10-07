@@ -53,14 +53,32 @@ class GoalsSettingsViewController: UIViewController {
         loadItems()
         
         stepperAlmidonValue.text = self.someonesGoal.almidones
+        almidonController.value = Double(self.someonesGoal.almidones)!
+        
         stepperAzucaresValue.text = self.someonesGoal.azucares
+        azucaresController.value = Double(self.someonesGoal.azucares)!
+        
         stepperVerdurasValue.text = self.someonesGoal.verduras
+        verdurasController.value = Double(self.someonesGoal.verduras)!
+        
         stepperFrutasValue.text = self.someonesGoal.frutas
+        frutasController.value = Double(self.someonesGoal.frutas)!
+        
         stepperLecheYYogurtValue.text = self.someonesGoal.lecheYYogurt
+        lecheYYogurtController.value = Double(self.someonesGoal.lecheYYogurt)!
+        
         stepperCarnesMagrasValue.text = self.someonesGoal.carnesMagras
+        carnesMagrasController.value = Double(self.someonesGoal.carnesMagras)!
+        
         stepperCarnModGrasValue.text = self.someonesGoal.carModGras
+        carnModGrasController.value = Double(self.someonesGoal.carModGras)!
+        
         stepperCarnAltGrasValue.text = self.someonesGoal.carAltGras
+        carnAltGrasController.value = Double(self.someonesGoal.carAltGras)!
+        
         stepperGrasasValue.text = self.someonesGoal.grasas
+        grasasController.value = Double(self.someonesGoal.grasas)!
+        
         
         tabBar.almidonGoal = Int(self.someonesGoal.almidones)!
         tabBar.azucaresGoal = Int(self.someonesGoal.azucares)!
@@ -75,31 +93,31 @@ class GoalsSettingsViewController: UIViewController {
     
     //Stepper actions
     @IBAction func stepperGoalAlmidonChanged(_ sender: UIStepper) {
-        stepperAlmidonValue.text = String(Int(sender.value) + Int(self.someonesGoal.almidones)!)
+        stepperAlmidonValue.text = String(Int(almidonController.value))
     }
     @IBAction func stepperGoalAzucaresChanged(_ sender: UIStepper) {
-        stepperAzucaresValue.text = String(Int(sender.value) + Int(self.someonesGoal.azucares)!)
+        stepperAzucaresValue.text = String(Int(azucaresController.value))
     }
     @IBAction func stepperGoalsVerdurasChanged(_ sender: UIStepper) {
-        stepperVerdurasValue.text = String(Int(sender.value) + Int(self.someonesGoal.verduras)!)
+        stepperVerdurasValue.text = String(Int(verdurasController.value))
     }
     @IBAction func stepperGoalsFrutasChanged(_ sender: UIStepper) {
-        stepperFrutasValue.text = String(Int(sender.value) + Int(self.someonesGoal.frutas)!)
+        stepperFrutasValue.text = String(Int(frutasController.value))
     }
     @IBAction func stepperGoalsLecheYYogurtChanged(_ sender: UIStepper) {
-        stepperLecheYYogurtValue.text = String(Int(sender.value) + Int(self.someonesGoal.lecheYYogurt)!)
+        stepperLecheYYogurtValue.text = String(Int(lecheYYogurtController.value))
     }
     @IBAction func stepperGoalsCarnesMagrasChanged(_ sender: UIStepper) {
-        stepperCarnesMagrasValue.text = String(Int(sender.value) + Int(self.someonesGoal.carnesMagras)!)
+        stepperCarnesMagrasValue.text = String(Int(carnesMagrasController.value))
     }
     @IBAction func stepperGoalsCarnModGrasChanged(_ sender: UIStepper) {
-        stepperCarnModGrasValue.text = String(Int(sender.value) + Int(self.someonesGoal.carModGras)!)
+        stepperCarnModGrasValue.text = String(Int(carnModGrasController.value))
     }
     @IBAction func stepperGoalsCarnAltGrasChanged(_ sender: UIStepper) {
-        stepperCarnAltGrasValue.text = String(Int(sender.value) + Int(self.someonesGoal.carAltGras)!)
+        stepperCarnAltGrasValue.text = String(Int(carnAltGrasController.value))
     }
     @IBAction func stepperGoalsGrasasChanged(_ sender: UIStepper) {
-        stepperGrasasValue.text = String(Int(sender.value) + Int(self.someonesGoal.grasas)!)
+        stepperGrasasValue.text = String(Int(grasasController.value))
     }
 
     
